@@ -6,8 +6,14 @@ class Room:
         self.songs = songs
         self.guests = []
     
-    def add_song(self, songs, new_song):
+    # def add_song(self, songs, new_song):
+    #     self.songs.append(new_song)
+    def add_song(self, new_song):
         self.songs.append(new_song)
+        # because you reference self.songs you dont need to then reference 'songs' in the parameter as in above.
+
+    
+    # def add_songs(self, songs)
     
     def check_guest_in(self, guests, new_guest):
         #check pub sell if over 18

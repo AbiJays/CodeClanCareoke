@@ -22,3 +22,34 @@ Songs
 Guests
     wallet
     favourite song() woo print
+
+
+encapsulation
+    encapsulating properties and methods together into a single concept thus creating classes.
+    you can override previous code and rename something:    
+    def setUp(self):
+        self.song = Song("Highway to Hell", "AC/DC")
+        self.song.title = "lol, something else"
+    single underscore.
+    python doesn't have a concept of private properties.
+        ._capacity = feeble attempt at making something private. please don't modify this. please dont change this property.
+        "_" is a flag of please no change. 
+
+
+def check_in_guest(Self, guest)
+	arguments: guests. this is the only thing coming from the outside. assuming methods are already written
+	1: check if guest can fit
+	if self.free_spaces() == 0:
+		return
+	2: check if guest can afford fee
+    	if not guest.can_afford:
+		    none
+    1&2: Or return together in an and statement
+        if self.free_spaces() == 0 or not guest.can_afford:
+		    none
+	3: remove money from guest
+        guest.pay(self.fee)
+	4: add money to till
+        self.till += self.fee
+	5: add guest to list
+        self.guests.append(guest)

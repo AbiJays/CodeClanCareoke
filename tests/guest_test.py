@@ -12,3 +12,6 @@ class TestGuest(unittest.TestCase):
 
     def test_guest_has_money(self):
         self.ssertEqual(20, self.guest_1.wallet)
+
+    
+    

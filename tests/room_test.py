@@ -26,7 +26,6 @@ class TestRoom(unittest.TestCase):
         self.guest_2 = Guest("Freddie Bramblesprout", 1)
 
 
-
     def test_room_has_name(self):
         self.assertEqual("School of Rock", self.room_1.name)
 
